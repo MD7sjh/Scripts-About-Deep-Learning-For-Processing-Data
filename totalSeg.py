@@ -3,8 +3,9 @@ import os
 from totalsegmentator.python_api import totalsegmentator
 
 if __name__ == "__main__":
-    imagesTr_path = r'C:\Users\SongJinHong\DeepLearning\autopet\imagesTr'
-    labelsTr_path = r'C:\Users\SongJinHong\DeepLearning\autopet\labelsTr'
+    
+    imagesTr_path = r'xxx'
+    labelsTr_path = r'xxx'
     for file in os.listdir(imagesTr_path):
         input_img = nib.load(os.path.join(imagesTr_path,file))
         print('segmenting: ',os.path.join(imagesTr_path,file))
